@@ -49,9 +49,7 @@
   <audio src="music.mp3"autoplay controls loop id="audio"></audio>
     <h1>Thu Ngân</h1>
     <script>
-    /*
-    * Settings
-    */
+
     var settings = {
         particles: {
             length:   500, // maximum amount of particles
@@ -462,6 +460,10 @@
         return (div);
         }
         // ]]>
+        let audio = document.getElementById("audio")
+            if(audio.play()){
+                audio.setAttribute("hidden","")
+            }
     </script>
  </BODY>
 </HTML>
